@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Pink Theme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe4ec, #ffd1dc);
+      color: #333;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #ff4d88;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d88;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 50px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      color: #ff4d88;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      max-width: 500px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #ff4d88;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e6005c;
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .section {
+      padding: 60px 50px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ff4d88;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff4d88;
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Xin chào, tôi là Dev 💖</h2>
+    <p>Tôi là lập trình viên yêu thích thiết kế web đẹp, hiện đại và sáng tạo với tone màu hồng nhẹ nhàng.</p>
+    <button class="btn">Xem thêm</button>
+  </div>
+  <img src="https://i.imgur.com/8Km9tLL.png" alt="avatar">
+</section>
+
+<section id="about" class="section">
+  <h2>Về tôi</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">Tôi chuyên thiết kế website với giao diện hiện đại, tối giản nhưng vẫn cực kỳ cuốn hút. Luôn học hỏi và cập nhật xu hướng mới.</p>
+</section>
+
+<section id="projects" class="section">
+  <h2>Dự án</h2>
+  <div class="projects">
+    <div class="card">Website bán hàng</div>
+    <div class="card">Ứng dụng quản lý</div>
+    <div class="card">Landing page</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Liên hệ</h2>
+  <p style="text-align:center;">Email: example@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Pink Portfolio</p>
+</footer>
+
+</body>
+</html>
